@@ -1,0 +1,10 @@
+{
+  "name": "fmMono",
+  "version": "0.0.1",
+  "description": "Frontend Mentor projects monorepo",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "talama@proton.me",
+  "license": "ISC"
+}
