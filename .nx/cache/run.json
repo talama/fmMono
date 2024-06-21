@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx dev @fmMono/fmPreviewCard",
+    "startTime": "2024-06-21T14:48:05.065Z",
+    "endTime": "2024-06-21T14:48:24.069Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@fmMono/fmPreviewCard:dev",
+      "target": "dev",
+      "projectName": "@fmMono/fmPreviewCard",
+      "hash": "6053479164038713371",
+      "startTime": "2024-06-21T14:48:05.074Z",
+      "endTime": "2024-06-21T14:48:24.068Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

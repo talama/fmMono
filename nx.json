@@ -1,0 +1,25 @@
+{
+	"targetDefaults": {
+		"build": {
+			"cache": true
+		},
+		"test": {
+			"cache": true
+		},
+		"lint": {
+			"chache": true
+		}
+	},
+	"plugins": [
+		{
+			"plugin": "@nx/vite/plugin",
+			"options": {
+				"buildTargetName": "build",
+				"testTargetName": "test",
+				"serveTargetName": "serve",
+				"previewTargetName": "preview",
+				"serveStaticTargetName": "serve-static"
+			}
+		}
+	]
+}
