@@ -2,4 +2,4 @@ node_modules
 dist
 build
 .nx/cache
-.nx/workspace-data/d/
+.nx/workspace-data
