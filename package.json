@@ -2,9 +2,12 @@
   "name": "fmMono",
   "version": "0.0.1",
   "description": "Frontend Mentor projects monorepo",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "author": "talama@proton.me",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "vite": "^5.3.1"
+  }
 }
