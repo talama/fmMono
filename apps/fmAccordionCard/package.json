@@ -1,7 +1,8 @@
 {
 	"name": "@fmMono/fmAccordionCard",
 	"version": "1.0.0",
-	"description": "Frontend Mentor - accordion card coding challeng",
+	"description": "Frontend Mentor - accordion card coding challenge",
+  "type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
