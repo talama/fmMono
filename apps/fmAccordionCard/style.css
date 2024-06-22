@@ -1,0 +1,282 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/kumbh-sans-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/kumbh-sans-v20-latin-700.woff2") format("woff2");
+}
+
+/* Custom Properties */
+:root {
+  /* Colors */
+  --clr-primary-100: hsl(238, 29%, 16%);
+  --clr-primary-red: hsl(14, 88%, 65%);
+
+  --clr-neutral-100: hsl(237, 12%, 33%);
+  --clr-neutral-200: hsl(240, 6%, 59%);
+  --clr-neutral-300: hsl(240, 5%, 91%);
+
+  --white: hsl(0, 0%, 100%);
+
+  --clr-gradient: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 66%)
+  );
+
+  /* Fonts */
+  --ff-primary: "Kumbh Sans", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 0.75rem;
+  --fs-500: 0.9375rem;
+  --fs-700: 2rem;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* General Settings */
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  background: var(--clr-gradient);
+}
+
+.accordion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 900px;
+  width: 90%;
+  background: var(--white);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: url("./assets/imgs/bg-pattern-desktop.svg"), white;
+  background-repeat: no-repeat;
+  background-position: -40rem -17rem;
+}
+
+/* Left side */
+
+.logo {
+  position: relative;
+}
+
+.logo__container {
+  overflow: hidden;
+}
+
+.logo__main {
+  margin-top: 4rem;
+  margin-left: -5rem;
+}
+
+.box {
+  position: absolute;
+  top: 11rem;
+  left: -5.625rem;
+}
+
+/* Right side */
+.faq__section {
+  display: grid;
+  gap: 1.5rem;
+  margin: 3rem 7rem 4rem 0;
+}
+
+.faq__title abbr {
+  text-decoration: none;
+}
+
+.faq__content {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq__content button {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-size: var(--fs-500);
+  border: none;
+  border-bottom: 1px solid var(--clr-neutral-300);
+  padding: 0 0 1rem 0;
+  background: transparent;
+}
+
+.faq__content button[aria-expanded="true"] {
+  font-weight: var(--fw-bold);
+  border: none;
+  padding: 0 0 0.5rem 0;
+}
+
+.faq__content button::after {
+  position: absolute;
+  right: 0;
+  content: url("./assets/imgs/icon-arrow-down.svg");
+}
+
+.faq__content button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.faq__content button:hover,
+.faq__content button:focus {
+  color: var(--clr-primary-red);
+  cursor: pointer;
+  outline: none;
+}
+
+.faq__desc-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+
+.faq__desc {
+  overflow: hidden;
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-200);
+}
+
+.faq__desc p {
+  padding: 0 1rem 1rem 0;
+  border-bottom: 1px solid var(--clr-neutral-300);
+}
+
+/* Attribution */
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6875rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Animation and Transitions */
+@keyframes cubeAnimation {
+  0% {
+    filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.3));
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.1));
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.3));
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .box {
+    animation: cubeAnimation 2s infinite;
+  }
+
+  .faq__desc-wrapper {
+    transition: grid-template-rows 0.5s ease-out;
+  }
+}
+
+/* Mobile version media queries */
+
+@media only screen and (max-width: 1000px) {
+  .accordion {
+    top: 10rem;
+    transform: translate(-50%, 0);
+    width: 375px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    background: url("./assets/imgs/bg-pattern-mobile.svg"), white;
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 300px;
+  }
+
+  .logo__container {
+    overflow: visible;
+  }
+
+  .logo__main {
+    margin: -140px auto;
+    width: 300px;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .faq__section {
+    margin: 0 auto;
+    margin: 0 auto;
+    padding: 15px 20px;
+    justify-items: center;
+  }
+
+  .faq__content {
+    margin-bottom: 30px;
+  }
+
+  .attribution {
+    display: none;
+  }
+}

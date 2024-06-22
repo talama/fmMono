@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/imgs/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="./assets/fonts/kumbh-sans-v20-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/kumbh-sans-v20-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>Frontend Mentor. FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main class="accordion">
+      <!-- Logo section -->
+      <div class="logo">
+        <div class="logo__container">
+          <img
+            src="assets/imgs/illustration-box-desktop.svg"
+            alt=""
+            class="box"
+          />
+          <picture class="logo__main">
+            <source
+              srcset="./assets/imgs/illustration-woman-online-mobile.svg"
+              media="(max-width: 1000px)"
+            />
+            <img
+              src="./assets/imgs/illustration-woman-online-desktop.svg"
+              alt=""
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- Faq section -->
+      <div class="faq__section">
+        <h1 class="faq__title">
+          <abbr title="Frequently Asked Questions">FAQ</abbr>s
+        </h1>
+
+        <dl class="faq__content">
+          <div class="faq__item">
+            <dt>
+              <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq__1"
+              >
+                How many team members can I invite?
+              </button>
+            </dt>
+            <dd class="faq__desc-wrapper" id="faq__1">
+              <div class="faq__desc">
+                <p>
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt>
+              <button type="button" aria-expanded="true" aria-controls="faq__2">
+                What is the maximum file upload size?
+              </button>
+            </dt>
+            <dd class="faq__desc-wrapper" id="faq__2">
+              <div class="faq__desc">
+                <p>
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt>
+              <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq__3"
+              >
+                How do I reset my password?
+              </button>
+            </dt>
+            <dd class="faq__desc-wrapper" id="faq__3">
+              <div class="faq__desc">
+                <p>
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt>
+              <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq__4"
+              >
+                Can I cancel my subscription?
+              </button>
+            </dt>
+            <dd class="faq__desc-wrapper" id="faq__4">
+              <div class="faq__desc">
+                <p>
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt>
+              <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq__5"
+              >
+                Do you provide additional support?
+              </button>
+            </dt>
+            <dd class="faq__desc-wrapper" id="faq__5">
+              <div class="faq__desc">
+                <p>
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
+              </div>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/talama">talama</a>.
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
