@@ -1,1 +1,67 @@
-@import url("./reset.css")
+@import url('./poppins.css');
+@import url('./reset.css');
+
+:root {
+	/* Colors */
+	--clr-primary-red: 0 78% 63%;
+	--clr-primary-cyan: 180 62% 55%;
+	--clr-primayry-orange: 34 97% 64%;
+	--clr-primayr-blue: 212 86% 64%;
+	--clr-dark-blue: 234 12% 34%;
+	--clr-gray-blue: 229 6% 66%;
+	--clr-light-gray: 0 0% 98%;
+
+	/* Font Family  */
+	--ff-sans: poppins, sans-serif;
+
+	/* font sizes */
+	--fs-200: 0.8125rem;
+	--fs-400: 0.9375rem;
+	--fs-600: 1.25rem;
+	--fs-800: clamp(1.5rem, 1.13vi + 1.24rem, 2.25rem);
+
+	/* Spacing  */
+	--s1: 1rem;
+	--s2: 1.5rem;
+	--s3: 2rem;
+	--s4: 3rem;
+}
+
+body {
+	background-color: hsl(var(--clr-light-gray));
+	color: hsl(var(--clr-gray-blue));
+	font-family: var(--ff-sans);
+	font-size: var(--fs-400);
+	font-weight: 400;
+}
+
+.center {
+	box-sizing: content-box;
+	margin-inline: auto;
+	max-inline-size: 60ch;
+	padding-inline: var(--s3);
+}
+
+hgroup {
+	text-align: center;
+}
+
+h1 {
+	color: hsl(var(--clr-dark-blue));
+	font-size: var(--fs-800);
+	font-weight: 300;
+	line-height: 1.4;
+
+	span {
+		font-weight: 700;
+	}
+}
+
+h2 {
+	color: hsl(var(--clr-dark-blue));
+	font-size: var(--fs-600);
+
+	+ p {
+		font-size: var(--fs-200);
+	}
+}
