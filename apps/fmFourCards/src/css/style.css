@@ -96,7 +96,6 @@ img {
 	flex-direction: column;
 	margin-block-start: var(--s5);
 	margin-inline: auto;
-	max-block-size: 100vh;
 	max-inline-size: 1100px;
 	padding-inline: var(--s3);
 }
@@ -105,7 +104,7 @@ img {
 	display: grid;
 	align-items: center;
 	gap: var(--s3, 1rem);
-	grid-template-columns: repeat(3, minmax(310px, 1fr));
+	grid-template-columns: repeat(3, minmax(250px, 1fr));
 }
 
 .middle {
@@ -152,7 +151,7 @@ a:visited {
 	text-decoration: none;
 }
 
-@media (width <= 1100px) {
+@media (width <=1000px) {
 	h1 {
 		font-size: var(--fs-700);
 	}
