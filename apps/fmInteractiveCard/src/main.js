@@ -54,18 +54,18 @@ confirmBtn.addEventListener('click', (e) => {
 // Handle continue button
 continueBtn.addEventListener('click', () => {
 	// reset inputs
-	for (let input of inputs) {
+	for (const input of inputs) {
 		input.value = '';
 	}
 
 	// reset display elements to their default value
-	for (let display of displays) {
+	for (const display of displays) {
 		const element = display.id.replace('display-', '');
 		display.textContent = formFields[element].default;
 	}
 
 	// reset errors
-	for (let error of errors) {
+	for (const error of errors) {
 		error.classList.add('hidden');
 	}
 
