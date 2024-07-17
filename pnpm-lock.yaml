@@ -81,6 +81,8 @@ importers:
 
   apps/fmInteractiveCard: {}
 
+  apps/fmNftComponent: {}
+
   apps/fmPreviewCard: {}
 
   apps/fmSummaryCmp: {}
