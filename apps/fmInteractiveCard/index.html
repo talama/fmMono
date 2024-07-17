@@ -49,10 +49,10 @@
 					<label for="card-number">Card Number</label>
 					<input
 						type="text"
+            inputmode="numeric"
 						id="card-number"
-						inputmode="numeric"
 						placeholder="e.g 1234 5678 9123 0000"
-						pattern0="[0-9 ]+"
+						pattern="[0-9 ]+$"
 						maxlength="19"
 						required
 					/>
@@ -69,15 +69,15 @@
 								id="card-month"
 								inputmode="numeric"
 								placeholder="MM"
-								patter="[0-9]+"
+								pattern="[0-9]+"
 								maxlength="2"
 								required
 							/>
 							<label for="card-year" class="visually-hidden">Expiration Year</label>
 							<input
 								type="text"
+                inputmode="numeric"
 								id="card-year"
-								inputmode="numeric"
 								placeholder="YY"
 								patter="[0-9]+"
 								maxlength="2"
