@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Screenshots
 
-![Imgur](https://imgur.com/zbcAr2d)
-![Imgur](https://imgur.com/gOqTm1c)
+![Imgur](https://i.imgur.com/zbcAr2d.png)
+![Imgur](https://i.imgur.com/gOqTm1c.png)
 
 ### Links
 
