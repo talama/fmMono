@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link href="./src/css/style.css" rel="stylesheet" />
+		<script src="./src/main.js" async></script>
+		<title>Frontend Mentor | Interactive card details form</title>
+	</head>
+	<body>
+		<main class="grid">
+			<h1 class="visually-hidden">Credit card details form</h1>
+			<div class="card flex flex-col">
+				<div class="card__front">
+					<div class="card__data flex flex-col">
+						<img src="/card-logo.svg" alt="" />
+						<span class="card__number" id="display-number">0000 0000 0000 0000</span>
+						<div class="card__owner">
+							<span id="display-name">Jane Appleseed</span>
+							<div>
+								<span id="display-month">00</span>/<span id="display-year">00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card__back relative">
+					<span class="cvc absolute" id="display-cvc">000</span>
+				</div>
+			</div>
+			<form action="post" id="card-form" class="form flex flex-col">
+				<div>
+					<label for="card-name">Cardholder Name</label>
+					<input
+						type="text"
+						id="card-name"
+						autocomplete="name"
+						autocapitalize="none"
+						autocorrect="off"
+						placeholder="e.g. Jane Appleseed"
+						pattern="[A-Za-z]+"
+						required
+					/>
+					<p aria-hidden="true" id="error-name" class="error hidden">
+						Wrong format, letters only
+					</p>
+				</div>
+				<div>
+					<label for="card-number">Card Number</label>
+					<input
+						type="text"
+						id="card-number"
+						inputmode="numeric"
+						placeholder="e.g 1234 5678 9123 0000"
+						pattern0="[0-9 ]+"
+						maxlength="19"
+						required
+					/>
+					<p aria-hidden="true" id="error-number" class="error hidden">
+						Wrong format, numbers only
+					</p>
+				</div>
+				<div class="flex form-date-cvc">
+					<div class="flex flex-col">
+						<label for="card-month">Exp. Date (MM/YY)</label>
+						<div class="form-date flex">
+							<input
+								type="text"
+								id="card-month"
+								inputmode="numeric"
+								placeholder="MM"
+								patter="[0-9]+"
+								maxlength="2"
+								required
+							/>
+							<label for="card-year" class="visually-hidden">Expiration Year</label>
+							<input
+								type="text"
+								id="card-year"
+								inputmode="numeric"
+								placeholder="YY"
+								patter="[0-9]+"
+								maxlength="2"
+								required
+							/>
+						</div>
+						<div class="flex error-date">
+							<p aria-hidden="true" class="error hidden" id="error-month">
+								Can't be blank
+							</p>
+							<p aria-hidden="true" class="error hidden" id="error-year">
+								Can't be blank
+							</p>
+						</div>
+					</div>
+					<div class="form-cvc flex flex-col">
+						<label for="card-cvc">Cvc</label>
+						<input
+							type="text"
+							id="card-cvc"
+							inputmode="numeric"
+							placeholder="e.g. 123"
+							patter="[0-9]+"
+							maxlength="3"
+							required
+						/>
+						<p aria-hidde="true" class="error hidden" id="error-cvc">Can't be blank</p>
+					</div>
+				</div>
+				<div>
+					<button id="confirm-btn" class="btn">Confirm</button>
+				</div>
+			</form>
+			<div id="form-completed" class="form-completed flex flex-col hidden">
+				<img src="/icon-complete.svg" alt="" />
+				<h2>Thank You!</h2>
+				<p>We've added your card details</p>
+				<button id="continue-btn" class="btn">Continue</button>
+			</div>
+		</main>
+	</body>
+</html>

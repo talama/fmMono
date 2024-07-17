@@ -79,6 +79,8 @@ importers:
 
   apps/fmFourCards: {}
 
+  apps/fmInteractiveCard: {}
+
   apps/fmPreviewCard: {}
 
   apps/fmSummaryCmp: {}

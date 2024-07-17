@@ -1,0 +1,13 @@
+{
+	"name": "@fmMono/fmInteractiveCard",
+	"version": "1.0.0",
+	"description": "Frontend Mentor - Interactive card details form",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"keywords": [],
+	"author": "talama@proton.me",
+	"license": "MIT"
+}
