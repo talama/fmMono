@@ -4,6 +4,7 @@
 :root {
 	/* Colors */
 	--clr-white: hsl(0 0% 100%);
+	--clr-shadow: hsl(0 0% 0% / 0.1);
 	--clr-primary-blue: hsl(215 51% 70%);
 	--clr-primary-cyan: hsl(178 100% 50%);
 	--clr-neutral-blue-100: hsl(217 54% 11%);
@@ -60,6 +61,7 @@ p {
 a {
 	color: var(--clr-white);
 	text-decoration: none;
+	transition: color 0.1s ease-in-out;
 
 	&:hover {
 		color: var(--clr-primary-cyan);
@@ -76,6 +78,7 @@ a {
 
 	background-color: var(--clr-neutral-blue-200);
 	border-radius: 1.2rem;
+	box-shadow: 0px 18px 4px 18px var(--clr-shadow);
 }
 
 .nft-cmp > p {
@@ -111,6 +114,9 @@ a {
 
 	opacity: 0;
 	background-color: hsl(from var(--clr-primary-cyan) h s l / 0.5);
+	border-radius: 0.6rem;
+
+	transition: opacity 0.2s ease-in-out;
 
 	&:hover {
 		opacity: 1;
