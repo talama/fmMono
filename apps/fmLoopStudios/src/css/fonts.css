@@ -1,0 +1,26 @@
+/* alata-regular - latin */
+@font-face {
+	font-family: 'Alata';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/alata-v10-latin-regular.woff2') format('woff2');
+}
+
+/* josefin-sans-300 - latin */
+@font-face {
+	font-family: 'Josefin Sans';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/josefin-sans-v32-latin-300.woff2') format('woff2');
+}
+
+/* josefin-sans-regular - latin */
+@font-face {
+	font-family: 'Josefin Sans';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/josefin-sans-v32-latin-regular.woff2') format('woff2');
+}

@@ -1,0 +1,18 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+
+:root {
+	/* Colors */
+	--clr-white: hsl(0 0% 100%);
+	--clr-black: hsl(0 0% 0%);
+	--clr-grey-100: hsl(0 0% 41%);
+	--clr-grey-200: hsl(0 0% 55%);
+
+	/* Typhography */
+	--ff-base: 'Alata', sans-serif;
+	--ff-title: 'Josefin Sans', sans-serif;
+
+	--fw-thin: 300;
+	--fw-regular: 400;
+}
+

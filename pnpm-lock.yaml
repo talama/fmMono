@@ -81,6 +81,8 @@ importers:
 
   apps/fmInteractiveCard: {}
 
+  apps/fmLoopStudios: {}
+
   apps/fmNftComponent: {}
 
   apps/fmPreviewCard: {}
