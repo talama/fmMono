@@ -40,7 +40,7 @@ main {
 	align-items: center;
 	justify-items: center;
 
-	max-inline-size: 1440px;
+	max-inline-size: 100vw;
 	block-size: 100vh;
 	margin-inline: auto;
 
